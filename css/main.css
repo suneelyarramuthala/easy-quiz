@@ -1,0 +1,131 @@
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+p{
+  margin: 0;
+}
+body{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+nav{
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(246, 246, 246);
+  padding: 0 40px;
+  box-shadow: 2px 2px 12px ;
+
+}
+main{
+  padding: 70px 150px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(236, 236, 236);
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  min-width: 40rem;
+}
+nav a {
+  text-decoration: none;
+  color: rgb(30, 70, 70);
+}
+li{
+  list-style: none;
+  font-size: larger;
+  font-weight: 700;
+
+}
+nav img{
+  max-width: 8rem;
+}
+.btn{
+  margin: 0;
+  padding: 15px 15px;
+  background-color: rgb(83, 52, 246);
+  color: white;
+  border-radius: 9px;
+}
+.btn:hover{
+  background-color: rgb(246, 246, 246);
+  color: rgb(30, 70, 70);
+  outline-offset: 1px;
+  outline-width: 1px;
+  outline: solid;
+  
+}
+button:hover{
+  background-color: rgb(246, 246, 246);
+  color: rgb(30, 70, 70);
+  border: none;
+  outline-offset: 1px;
+  outline-width: 1px;
+  outline: solid;
+  
+}
+.home{
+  padding-top: 15px;
+}
+.image img{
+  max-width: 600px;
+}
+.quote p{
+  max-width: 400px;
+  font-weight: 500;
+}
+.join{
+  font-size: small;
+  font-weight: 700;
+
+}
+.quiz{
+  font-size: xxx-large;
+  font-weight: 900;
+  color: rgb(30, 70, 70);
+}
+span{
+  color: rgb(71, 104, 5);
+}
+section{
+  background-color: rgb(236, 236, 236);
+  display: flex;
+  padding-bottom: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  font-size: x-large;
+}
+footer{
+  background-color: rgb(30, 70, 70);
+  height: 160px;
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+footer a{
+  text-decoration: none;
+  color: rgb(236, 236, 236);
+}
+.foot-links{
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+}
