@@ -136,12 +136,35 @@ footer a{
   padding: 10px;
   width: 280px;
   left: 50%;
+  border-radius:30px;
   margin-left: -150px;
-  height: 180px;
+  height: 300px;
   top: 50%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin-top: -100px;
   background: #FFF;
   z-index: 20;
+}
+.p1{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 150px;
+  align-items: center;
+}
+.p1 a{
+  text-decoration: none;
+}
+.user-input{
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-between;
+}
+.name-user{
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
 }
 #popup2:after {
   position: fixed;
@@ -163,4 +186,32 @@ footer a{
   right: 0;
   background: #FFF;
   z-index: -1;
+}
+input{
+  width: 90%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid blueviolet;
+  padding: 10px;
+  color:black;
+}
+.btn1{
+  margin: 0;
+  display: flex;
+  padding: 7px 7px;
+  background-color: rgb(83, 52, 246);
+  color: white;
+  border-radius: 9px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+.btn1:hover{
+  background-color: rgb(246, 246, 246);
+  color: rgb(30, 70, 70);
+  outline-offset: 1px;
+  outline-width: 1px;
+  outline: solid;
 }
