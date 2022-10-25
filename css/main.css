@@ -31,7 +31,10 @@ main{
 .info{
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 15px;
+}
+.info a{
+  text-decoration: none;
 }
 nav ul{
   display: flex;
@@ -75,9 +78,7 @@ button:hover{
   outline: solid;
   
 }
-.home{
-  padding-top: 15px;
-}
+
 .image img{
   max-width: 600px;
 }
@@ -128,4 +129,38 @@ footer a{
   display: flex;
   width: 250px;
   justify-content: space-between;
+}
+.popup {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: 280px;
+  left: 50%;
+  margin-left: -150px;
+  height: 180px;
+  top: 50%;
+  margin-top: -100px;
+  background: #FFF;
+  z-index: 20;
+}
+#popup2:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: -2;
+}
+
+#popup2:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #FFF;
+  z-index: -1;
 }

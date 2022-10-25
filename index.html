@@ -18,10 +18,17 @@
       </a>
       <ul>
         <li class="home"><a href="index.html">Home</a></li>
-        <li class="btn" >Return to Quiz</li>
-        <li class="btn" onclick="goToQuiz()">Start a new Quiz</li>
+        <li ><a href="#" class="btn">return to Quiz</a> </li>
+        <li ><a href="#" onclick="show('popup2')" class="btn">a new Quiz</a> </li>
       </ul>
     </nav>
+    <div class="popup" id="popup2">
+      <p>This is a popup!</p>
+      <p>Overlay uses <b>:before</b> and <b>:after</b> pseudo-classes.</p>
+      <p>(This one does block elements on the background)</p>
+      <a href="#" onclick="hide('popup2')">back</a>
+      <a href="#" onclick="goToQuiz()">ok</a>
+    </div>
     <main>
       <div class="info">
         <div class="join">
@@ -33,7 +40,7 @@
           <p>“My friend said to me, You know what I like? Mashed potatoes. I was like, Dude, you have to give me time to guess. If you’re going to quiz me you have to insert a pause.” ~ Mitch Hedberg</p>
         </div>
         <div>
-          <button class="btn" onclick="goToQuiz()">Let's Do It</button>
+          <a href="#" class="btn" onclick="show('popup2')">lets do it</a>
         </div>
       </div>
       <div class="image">

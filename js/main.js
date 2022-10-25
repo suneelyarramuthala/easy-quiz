@@ -4,6 +4,16 @@ let score = 0;
 function goToQuiz() {
   location.replace("quiz.html");
 }
+$ = function (id) {
+  return document.getElementById(id);
+};
+
+var show = function (id) {
+  $(id).style.display = "block";
+};
+var hide = function (id) {
+  $(id).style.display = "none";
+};
 
 btn.addEventListener("click", () => {
   var q1 = document.querySelector('input[name="q1"]:checked');
