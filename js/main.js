@@ -1,4 +1,5 @@
 var ok = document.querySelector("#btn1");
+var userName = "";
 
 $ = function (id) {
   return document.getElementById(id);
@@ -24,8 +25,12 @@ ok.addEventListener("click", () => {
       if (name.value.length < 3) {
         alert("Please enter a name with more than two characters");
       } else {
+        userName = name.value;
+        console.log(userName);
+        localStorage.setItem("uName", userName);
         location.replace("quiz.html");
       }
     }
   }
 });
+console.log(userName);

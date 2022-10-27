@@ -1,5 +1,9 @@
+displayName = localStorage.getItem("uName");
+console.log(displayName);
 var btn = document.querySelector("#btn");
+var reload = document.querySelector("#reload");
 let score = 0;
+alert("hello " + displayName + " please continue with the quiz below");
 btn.addEventListener("click", () => {
   var q1 = document.querySelector('input[name="q1"]:checked');
   var q2 = document.querySelector('input[name="q2"]:checked');
@@ -22,6 +26,8 @@ btn.addEventListener("click", () => {
   if (q4.value === "4") {
     score += 1;
   }
-  alert("your score is " + score);
+  alert("well done " + displayName + " your score is " + score);
+});
+reload.addEventListener("click", () => {
   location.reload();
 });
