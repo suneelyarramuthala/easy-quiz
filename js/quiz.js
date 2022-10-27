@@ -27,7 +27,8 @@ btn.addEventListener("click", () => {
     score += 1;
   }
   alert("well done " + displayName + " your score is " + score);
+  localStorage.setItem(displayName, score);
 });
-reload.addEventListener("click", () => {
+let playerScore = reload.addEventListener("click", () => {
   location.reload();
 });
