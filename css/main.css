@@ -85,6 +85,7 @@ button:hover{
 .quote p{
   max-width: 400px;
   font-weight: 500;
+  margin-bottom: 20px;
 }
 .join{
   font-size: small;
@@ -158,12 +159,14 @@ footer a{
 .user-input{
   display: flex;
   flex-direction: column;
+  overflow: auto;
   height: 300px;
   justify-content: space-between;
 }
 .name-user{
   display: flex;
   flex-direction: column; 
+  overflow: auto;
   gap: 10px;
 }
 #popup2:after {
@@ -178,6 +181,27 @@ footer a{
 }
 
 #popup2:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #FFF;
+  z-index: -1;
+}
+#score:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: -2;
+}
+
+#score:before {
   position: absolute;
   content: "";
   top: 0;
@@ -214,4 +238,27 @@ input{
   outline-offset: 1px;
   outline-width: 1px;
   outline: solid;
+}
+.score{
+  background-color: rgb(236, 236, 236);
+  display: flex;
+  padding-bottom: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  font-size: x-large;
+}
+.score a{
+  text-decoration: none;
+}
+#boardscore{
+  overflow: auto;
+  margin-bottom: 15px;
+}
+.git a:hover{
+  color: blueviolet;
+
 }

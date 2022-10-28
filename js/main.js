@@ -1,5 +1,7 @@
 var ok = document.querySelector("#btn1");
+var boardScore = document.querySelector("#boardscore");
 var userName = "";
+var text = "";
 
 $ = function (id) {
   return document.getElementById(id);
@@ -11,6 +13,9 @@ var show = function (id) {
 var hide = function (id) {
   $(id).style.display = "none";
 };
+function goBack() {
+  location.replace("quiz.html");
+}
 
 ok.addEventListener("click", () => {
   var name = document.querySelector('input[name="name"]');
@@ -34,3 +39,10 @@ ok.addEventListener("click", () => {
   }
 });
 console.log(userName);
+for (let i = 0; i < localStorage.length - 1; i++) {
+  let key = localStorage.key(i);
+  let value = localStorage.getItem(key);
+  console.log(key, value);
+  text += key + "&nbsp &nbsp &nbsp &nbsp &nbsp" + value + "</br>" + "<hr>";
+}
+boardScore.innerHTML += text;
