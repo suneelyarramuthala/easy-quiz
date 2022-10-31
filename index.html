@@ -26,10 +26,10 @@
       <div class="user-input">
         <div class="name-user">
           <label for="name">Please Enter Your Name</label>
-          <input type="text" id="name" name="name" placeholder="Name">
+          <input type="text" id="name" name="name" placeholder="Name" onkeypress="validate(event)">
         </div>
         <div class="p1">
-          <a href="#" class="btn1" id="btn1" >ok</a>
+          <a href="#" class="btn1" id="btn1"  >ok</a>
           <a href="#" class="btn1" onclick="hide('popup2')">back</a>
         </div>
       </div>
@@ -37,10 +37,11 @@
     <div class="popup" id="score">
       <div class="user-input">
         <div class="name-user">
-          <span id="boardscore"></span>
+          <span id="boardscore"> </span>
         </div>
         <div class="p1">
           <a href="#" class="btn1" onclick="hide('score')">back</a>
+          <a href="#" class="btn1" onclick="clearData()">clear all data</a>
         </div>
       </div>
     </div>

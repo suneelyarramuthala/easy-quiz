@@ -1,4 +1,5 @@
 var ok = document.querySelector("#btn1");
+var name2 = document.querySelector("#name");
 var boardScore = document.querySelector("#boardscore");
 var userName = "";
 var text = "";
@@ -17,7 +18,8 @@ function goBack() {
   location.replace("quiz.html");
 }
 
-ok.addEventListener("click", () => {
+ok.addEventListener("click", nameCheck);
+function nameCheck() {
   var name = document.querySelector('input[name="name"]');
   console.log(name.value);
   console.log(name.value.length);
@@ -37,7 +39,14 @@ ok.addEventListener("click", () => {
       }
     }
   }
-});
+  return name;
+}
+function validate(event) {
+  var x = event.code;
+  if (x == "Enter") {
+    nameCheck();
+  }
+}
 console.log(userName);
 for (let i = 0; i < localStorage.length - 1; i++) {
   let key = localStorage.key(i);
@@ -45,4 +54,13 @@ for (let i = 0; i < localStorage.length - 1; i++) {
   console.log(key, value);
   text += key + "&nbsp &nbsp &nbsp &nbsp &nbsp" + value + "</br>" + "<hr>";
 }
-boardScore.innerHTML += text;
+if (text === "") {
+  console.log("hi");
+  boardScore.innerHTML = "EMPTY";
+} else {
+  boardScore.innerHTML = text;
+}
+function clearData() {
+  localStorage.clear();
+  location.reload();
+}
