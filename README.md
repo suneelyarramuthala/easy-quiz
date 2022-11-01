@@ -14,7 +14,7 @@ A simple interactive web design for quick and simple quiz
 
 ![App Screenshot](img/quiz_question.png)
 
-![App Screenshot](img/quiz_question.png)
+![App Screenshot](img/quiz_2.png)
 
 ## SHOWING ALL THE SCORES
 
